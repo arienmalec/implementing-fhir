@@ -7,15 +7,14 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            'Implementing FHIR'
+tagline:          'An adventure in Rust and obsessive spec reading'
+url:              http://arienmalec.github.io/implementing-fhir/
 paginate:         1
-baseurl:          /
+baseurl:          ""
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Arien Malec
+  url:            https://twitter.com/amalec
 
 # Custom vars
 version:          1.0.0
