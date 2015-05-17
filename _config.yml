@@ -9,9 +9,9 @@ relative_permalinks: true
 # Setup
 title:            'Implementing FHIR'
 tagline:          'An adventure in Rust and obsessive spec reading'
-url:              http://arienmalec.github.io/implementing-fhir/
-paginate:         1
-baseurl:          ""
+url:              http://arienmalec.github.io
+paginate:         3
+baseurl:          /implementing-fhir
 author:
   name:           Arien Malec
   url:            https://twitter.com/amalec
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/arienmalec/implementing-fhir
