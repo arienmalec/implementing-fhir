@@ -16,10 +16,11 @@ There's a [whole section](https://hl7-fhir.github.io/datatypes.html) documenting
 I ran myself into a corner implementing primitives, however, because it wasn't clear what the basic structure of FHIR is. I suspect that FHIR was originally developed by creating good simple XML definitions of basic healthcare data structures, and then cross mapping to JSON. That is to say, FHIR was originally a top down exercise based on XML data representation, and then was generalized. This drives some basic representation decisions: an `Element` is, well, an XML `Element`, with `value` being an attribute. Given that definition, we only need to define what kinds of values can be represented as primitives, and sub-elements are given in representation. With XML Schema-based code generation, the top level element translates to a class name, and sub-element names translate to properties or fields.
 
 For someone who wants to go the XML Schema-based code generation route, the implementation approach is something like this:
-* Implement the primitive types
-* Implement the compound types
-* Implement code generation via the XML Schema, with built in XML serialization/deserialization
-* Implement a custom JSON serialization/deserialization approach (because the JSON serialization format is idiosyncratic, you are going to have to build this from scratch)
+
+- Implement the primitive types
+- Implement the compound types
+- Implement code generation via the XML Schema, with built in XML serialization/deserialization
+- Implement a custom JSON serialization/deserialization approach (because the JSON serialization format is idiosyncratic, you are going to have to build this from scratch)
 
 That approach probably works well for those for whom XML and XML Schema are a first language and wants a code generation approach, but not so well for someone trying to model FHIR types as a first class concept, who dislikes code generation, and who liked XML when it was first released, but avoided attributes like the plague, and started backing slowly and carefully away from XML when namespaces and schemas were added.
 
