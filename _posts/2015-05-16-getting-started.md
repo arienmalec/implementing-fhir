@@ -19,7 +19,7 @@ For someone who wants to go the XML Schema-based code generation route, the impl
 
 - Implement the primitive types
 - Implement the compound types
-- Implement code generation via the XML Schema, with built in XML serialization/deserialization
+- Implement code generation via the the resource definitions or profiles, with built in XML serialization/deserialization
 - Implement a custom JSON serialization/deserialization approach (because the JSON serialization format is idiosyncratic, you are going to have to build this from scratch)
 
 That approach probably works well for those for whom XML and XML Schema are a first language and wants a code generation approach, but not so well for someone trying to model FHIR types as a first class concept, who dislikes code generation, and who liked XML when it was first released, but avoided attributes like the plague, and started backing slowly and carefully away from XML when namespaces and schemas were added.
