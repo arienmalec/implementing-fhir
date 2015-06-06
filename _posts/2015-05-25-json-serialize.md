@@ -73,7 +73,7 @@ The `value` of an `Element` is one of:
 
 (It's funny that FHIR serialization is defined in terms of XML, because this definition is a perfect map to JSON. It's still incomplete, however, because we haven't deal with `id`s and `extension`s).
 
-Given that definition, again the definition of `ElementType` and `to_json` are reasonably straightforward:
+Given that definition, again the definition of `ElementType` and `to_json` are reasonably straightforward (NOTE: but wrong, because we haven't yet dealt with `id` and `extension`):
 
 ```rust
 pub enum ElementType {
