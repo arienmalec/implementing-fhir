@@ -62,7 +62,7 @@ There's, by the way, a much simpler definition of `Extension` that's possible:
 ```rust
 pub enum ExtensionValue {
 	Atom(Primitive),
-	Composite(Element)
+	Composite(Element),
 	Extensions(Vec<Extension>) 
 }
 
