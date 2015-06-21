@@ -20,3 +20,5 @@ My interim reflections and tentative recommendations to the FHIR team are:
 * Consider limiting `Extension`s to `Resource` objects
 
 To be clear, though, the general experience has been highly positive.
+
+In separate news, Rust is a pretty awesome language.
