@@ -25,7 +25,7 @@ A FHIR value is one of the following:
 2. A set (that is, unique by name) of sub-elements
 3. A union value (set of possible type values)
 
-Values are additionally associated with an optional single `id` and an optional bag (that is, allows recurring values by `extension` URI and ordering is not sigificant.) of `extension`s. (That is, the "value" is a 3-tuple, with a value slot, an optional `id` slot, and an `extension` bag slot).
+Values are additionally associated with an optional single `id` and an optional bag (that is, allows recurring values by `extension` URI and ordering is not significant) of `extension`s. (That is, the "value" is a 3-tuple, with a value slot, an optional `id` slot, and an `extension` bag slot).
 
 This definition is deliberately recursive: FHIR elements (and resources) define a directed acyclic graph, terminating in leaf nodes which are atomic primitives.
 
@@ -53,7 +53,7 @@ The FHIR documentation calls union types variously choice types or polymorphic t
 
 #### Cardinality and Optionality
 
-FHIR value definitions include cardinality and optionality constraints. Cardinality defines if values may repeat (that is, is defined as a list of values), or if only a singular value is allowed; optionality defines if an value may be missing. The combination of optionality and cardinality defines four constraints, represented [0..1], [1..1], [0..*], [1..*], where the first `0` or `1` define optional or required, and the second `1` or `*` define singular versus repeating.
+FHIR value definitions include cardinality and optionality constraints. Cardinality defines if values may repeat (that is, is defined as a list of values), or if only a singular value is allowed; optionality defines if an value may be missing. The combination of optionality and cardinality defines four constraints, represented \[0..1\], \[1..1\], \[0..\*\], \[1..\*\], where the first `0` or `1` define optional or required, and the second `1` or `*` define singular versus repeating.
 
 FHIR values are never serialized empty; optional elements are simply elided from serialization representation. FHIR implementation should follow these semantics. If an implementation allows `null` values it MUST treat `null`s as equivalent to "missing" or "not provided". (It would be better, however for an implementation to not allow missing values to be accessed, and provide, e.g., `is_present` or `is_missing` or equivalent methods to check for the presence of element values).
 
